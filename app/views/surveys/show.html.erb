@@ -1,0 +1,8 @@
+<%= @survey.title %>
+<% @survey.survey_inputs.each do |input| %>
+<div>
+    <h2><%= input.label %></h2>
+    <p><%= input.name %></p>
+    <p><%= input.input_type %></p>
+</div>
+<% end %>
