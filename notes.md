@@ -1,3 +1,5 @@
+ADD POLLS LATER
+
 MVP
 - Login
 - Create Survey
@@ -46,3 +48,9 @@ MVP
 - index submissions
 - show survey (as creator)
 
+routes
+
+/surveys/:id
+|   new
+|   create
+|   destroy
