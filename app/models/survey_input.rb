@@ -1,4 +1,10 @@
 class SurveyInput < ApplicationRecord
+  has_many :survey_input_options
+  accepts_nested_attributes_for :survey_input_options
+
+  def self.available_types
+    %w(text date select checkbox textarea)
+  end
 end
 
 # types
