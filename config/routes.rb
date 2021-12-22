@@ -3,5 +3,6 @@ Rails.application.routes.draw do
 
   resources :surveys, only: [:index, :new, :create, :show] do
     resources :inputs, only: [:new, :create, :destroy], controller: "survey_input"
+    resources :submission, only: [:new, :create]
   end
 end

@@ -1,0 +1,9 @@
+<h1><%= @survey.title %></h1>
+
+<%# byebug %>
+<%= form_with do |o| %>
+    <% @survey.survey_inputs.each do |surveyInput| %>
+    <% byebug %>
+        <% surveyInput.to_html(o) %>
+    <% end %>
+<% end %>
